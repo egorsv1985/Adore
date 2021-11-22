@@ -1,0 +1,58 @@
+.main {
+	.container {
+		@extend %container;
+	}
+
+	// .main__wrapper
+	&__wrapper {
+		@include flex (center, center, wrap, column);
+		border: 3px solid #1E4D51;
+		border-radius: 20px;
+		padding: 0 32px;
+		padding-bottom: 30%;
+	}
+
+	// .main__img
+	&__img {
+		@include wh (238px);
+	}
+
+	h2 {
+		font-family: "Oswald-Medium", sans-serif;
+		@include font (28px, 94.5%, 500, center);
+		margin: 26px 0;
+	}
+
+	h1 {
+		font-family: "Oswald-Regular", sans-serif;
+		@include font (28px, 94.5%, 400, center);
+		margin: 26px 0;
+	}
+
+
+	// .main__date
+	&__date {
+		font-family: "Oswald-Regular", sans-serif;
+		@include font (22px, 94.5%, 400, center);
+		margin-bottom: 10px;
+	}
+
+	// .main__time
+	&__time {
+		@include font (16px, 94.5%, 400, center);
+	}
+
+	// .main__btn
+	&__btn {
+		@include wh (200px, 40px);
+		margin-top: 26px;
+		filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+		background: $bgColorBtn;
+		box-shadow: 0px 4px 4px rgba(30, 77, 81, 0.25);
+		border-radius: 5px;
+		@include font (16px, 94.5%, 400, center);
+		font-family: "PlayfairDisplay-Regular", sans-serif;
+		color: $textColorBtn;
+		@include flex (center, center);
+	}
+}

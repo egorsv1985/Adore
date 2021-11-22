@@ -1,0 +1,30 @@
+.header {
+	.container {
+		@extend %container;
+	}
+
+	margin: 45px 0 10px;
+
+	// .header__wrapper
+	&__wrapper {
+		@include flex (space-between, center);
+	}
+
+	// .header__logo
+	&__logo {}
+
+	// .header__contacts
+	&__contacts {
+		@include flex (space-between, center);
+		gap: 24px;
+	}
+
+	// .header__item
+	&__item {}
+
+	// .header__link
+	&__link {}
+
+	// .header__img
+	&__img {}
+}
