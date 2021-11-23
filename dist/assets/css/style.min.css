@@ -612,4 +612,44 @@ template {
   font-weight: 400;
   text-align: center;
 }
+
+.form__title {
+  font-size: 28px;
+  line-height: 94.5%;
+  font-weight: 700;
+  font-family: Playfair Display;
+  text-align: center;
+  margin-top: 32px;
+}
+.form__button {
+  width: 236px;
+  height: 39px;
+  background: #e4b0a2;
+  font-size: 20px;
+  line-height: 94.5%;
+  font-weight: 400;
+  font-family: Playfair Display;
+  margin-top: 54px;
+  box-shadow: 4px 4px 4px rgba(30, 77, 81, 0.25);
+  border: none;
+}
+.form__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #1e4d51;
+  padding: 24px 37px 12px;
+  margin-top: 50px;
+}
+.form__email, .form__tel {
+  margin-top: 24px;
+}
+
+input {
+  width: 228px;
+  height: 32px;
+  border: 2px solid #e4b0a2;
+  background-color: #1e4d51;
+  padding-left: 24px;
+}
 /*# sourceMappingURL=style.min.css.map */
