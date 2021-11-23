@@ -1,0 +1,89 @@
+.payment {
+	.container {
+		@extend %container;
+	}
+
+	// .payment__wrapper
+	&__wrapper {
+		@include flex (center, center, wrap, column);
+		padding: 0 32px;
+	}
+
+	h2 {
+		font-family: "PlayfairDisplay-Regular", sans-serif;
+		@include font (22px, 94.5%, 400, center, uppercase);
+		margin: 18px 0;
+		position: relative;
+
+		&::after,
+		&::before {
+			@include pseudo();
+			@include wh (146px, 1px);
+			border: 1px solid #1E4D51;
+		}
+
+		&::after {
+			@include pos (absolute, 0, 0, 0, 0);
+		}
+
+		&::before {
+			@include pos (absolute, 0, 0, 0, 0);
+		}
+	}
+
+	h1 {
+		font-family: "Oswald-Medium", sans-serif;
+		@include font (26px, 100%, 500, center);
+		letter-spacing: 0.07em;
+		margin: 18px 0;
+	}
+
+	// .payment__img
+	&__img {
+		@include wh (258px);
+	}
+
+	// .payment__discount
+	&__discount {
+		font-family: "Oswald-Regular", sans-serif;
+		@include font (16px, 100%, 400, center);
+		letter-spacing: 0.07em;
+		text-decoration-line: line-through;
+
+	}
+
+	// .payment__price
+	&__price {
+		font-family: "Oswald-Medium", sans-serif;
+		@include font (36px, 100%, 500, center);
+		letter-spacing: 0.07em;
+
+	}
+
+	.btn {
+		background-color: transparent;
+		@include wh (236px, 40px);
+		margin: 12px 0 68px;
+		filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+		background-color: transparent;
+		box-shadow: 0px 4px 4px rgba(30, 77, 81, 0.25);
+		border-radius: 5px;
+		@include font (22px, 94.5%, 400, center);
+		font-family: "PlayfairDisplay-Regular", sans-serif;
+		color: $textColor;
+		@include flex (center, center);
+		border: 3px solid $textColor;
+	}
+
+	// .payment__list
+	&__list {
+		@include flex (space-between, center);
+		gap: 22px;
+	}
+
+	// .payment__item
+	&__item {}
+
+	// .payment__card
+	&__card {}
+}

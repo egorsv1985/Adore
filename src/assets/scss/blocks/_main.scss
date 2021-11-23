@@ -43,7 +43,7 @@
 	}
 
 	// .main__btn
-	&__btn {
+	.btn {
 		@include wh (200px, 40px);
 		margin-top: 26px;
 		filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
