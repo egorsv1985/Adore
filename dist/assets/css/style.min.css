@@ -493,7 +493,9 @@ template {
   padding: 32px 0 24px;
 }
 .about__text {
-  padding: 40px 48px 50px;
+  padding: 16px 24px;
+  margin: 24px;
+  border: 1px solid #e4b0a2;
   font-weight: 500;
   font-size: 22px;
   line-height: 111.5%;
@@ -502,18 +504,22 @@ template {
 }
 .about__wrapper {
   background: #1e4d51;
-  margin-top: 22 px;
+}
+.about__wrap--green {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .about__btn__wrap {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+  padding: 11px 0 30px;
 }
 .about__btn {
   color: #1e4d51;
   background-color: #e4b0a2;
-  width: 98px;
-  height: 28px;
+  width: 146px;
+  height: 40px;
   left: 24px;
   top: 6px;
   font-size: 22px;
