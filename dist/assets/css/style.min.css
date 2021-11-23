@@ -523,6 +523,7 @@ template {
   left: 24px;
   top: 6px;
   font-size: 22px;
+  box-shadow: 4px 4px 4px rgba(228, 176, 162, 0.25);
 }
 
 .footer__wrapper {
