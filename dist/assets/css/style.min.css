@@ -493,7 +493,6 @@ template {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  padding: 0 32px;
 }
 .payment h2 {
   font-family: "PlayfairDisplay-Regular", sans-serif;
@@ -514,16 +513,16 @@ template {
 }
 .payment h2::after {
   position: absolute;
-  top: 0;
+  top: 50%;
   bottom: 0;
-  left: 0;
+  left: 95px;
   right: 0;
 }
 .payment h2::before {
   position: absolute;
-  top: 0;
+  top: 50%;
   bottom: 0;
-  left: 0;
+  left: -150px;
   right: 0;
 }
 .payment h1 {

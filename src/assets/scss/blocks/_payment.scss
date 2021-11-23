@@ -6,7 +6,7 @@
 	// .payment__wrapper
 	&__wrapper {
 		@include flex (center, center, wrap, column);
-		padding: 0 32px;
+
 	}
 
 	h2 {
@@ -23,11 +23,11 @@
 		}
 
 		&::after {
-			@include pos (absolute, 0, 0, 0, 0);
+			@include pos (absolute, 50%, 0, 95px, 0);
 		}
 
 		&::before {
-			@include pos (absolute, 0, 0, 0, 0);
+			@include pos (absolute, 50%, 0, -150px, 0);
 		}
 	}
 
