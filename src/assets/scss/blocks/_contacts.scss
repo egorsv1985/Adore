@@ -1,0 +1,63 @@
+.contacts {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 62px;
+  }
+  &__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include font(22px, 100%, 400);
+    margin-bottom: 6px;
+  }
+  &__title {
+    @include font(22px, 94.5% 400);
+    font-family: PlayfairDisplay-Regular;
+    text-align: center;
+    padding-top: 32px;
+    margin-bottom: 50px;
+  }
+  &__title::before,
+  &__title::after {
+    content: "";
+    display: inline-flex;
+    position: relative;
+    top: -1px;
+    width: 50%;
+    height: 1px;
+    vertical-align: middle;
+    background: #1e4d51;
+  }
+  &__title::before {
+    left: -5px;
+    margin-left: -50%;
+  }
+  &__title::after {
+    left: 5px;
+    margin-right: -50%;
+  }
+  &__telephone {
+    font-family: Playfair Display;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+  }
+  &__tel {
+    @include font(20px, 100%, 700);
+    font-feature-settings: "pnum" on, "lnum" on;
+  }
+  &__text {
+    @include font(22px, 100%, 500, center);
+    max-width: 294px;
+    letter-spacing: 0.07em;
+    margin-bottom: 62px;
+  }
+}
