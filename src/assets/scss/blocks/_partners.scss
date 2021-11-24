@@ -1,0 +1,49 @@
+.partners {
+	.container {
+		@extend %container;
+	}
+
+	// .partners__wrapper
+	&__wrapper {
+
+		// .payment__wrapper
+		&__wrapper {
+			@include flex (center, center, wrap, column);
+
+		}
+	}
+
+	h2 {
+		font-family: "PlayfairDisplay-Regular", sans-serif;
+		@include font (22px, 94.5%, 400, center, uppercase);
+		margin: 18px 0;
+		position: relative;
+
+		&::after,
+		&::before {
+			@include pseudo();
+			@include wh (146px, 1px);
+			border: 1px solid #1E4D51;
+		}
+
+		&::after {
+			@include pos (absolute, 50%, 0, 95px, 0);
+		}
+
+		&::before {
+			@include pos (absolute, 50%, 0, -150px, 0);
+		}
+	}
+
+	// .partners__img
+	&__img {}
+
+	// .partners__list
+	&__list {}
+
+	// .partners__item
+	&__item {}
+
+	// .partners__logo
+	&__logo {}
+}
