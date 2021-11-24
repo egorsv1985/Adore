@@ -9,16 +9,16 @@
 		&::after,
 		&::before {
 			@include pseudo();
-			@include wh (126px, 0);
-			border: 1px solid #1E4D51;
+			@include wh (24%, 1px);
+			border: 1px solid $bgColorBtn;
 		}
 
 		&::after {
-			@include pos (absolute, 50%, 0, 0, 0);
+			@include pos (absolute, 50%, $right: 0);
 		}
 
 		&::before {
-			@include pos (absolute, 50%, 0, 260px, 0);
+			@include pos (absolute, 50%);
 		}
 	}
 

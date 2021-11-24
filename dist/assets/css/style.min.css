@@ -549,23 +549,18 @@ template {
 .contacts h2::after, .contacts h2::before {
   content: "";
   display: block;
-  width: 126px;
-  height: 0;
+  width: 24%;
+  height: 1px;
   border: 1px solid #1E4D51;
 }
 .contacts h2::after {
   position: absolute;
   top: 50%;
-  bottom: 0;
-  left: 0;
   right: 0;
 }
 .contacts h2::before {
   position: absolute;
   top: 50%;
-  bottom: 0;
-  left: 260px;
-  right: 0;
 }
 .contacts__text {
   font-family: "Oswald-Medium", sans-serif;
@@ -688,23 +683,18 @@ template {
 .payment h2::after, .payment h2::before {
   content: "";
   display: block;
-  width: 146px;
+  width: 24%;
   height: 1px;
   border: 1px solid #1E4D51;
 }
 .payment h2::after {
   position: absolute;
   top: 50%;
-  bottom: 0;
-  left: 95px;
   right: 0;
 }
 .payment h2::before {
   position: absolute;
   top: 50%;
-  bottom: 0;
-  left: -150px;
-  right: 0;
 }
 .payment h1 {
   font-family: "Oswald-Medium", sans-serif;
