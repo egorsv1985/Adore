@@ -20,7 +20,7 @@
 		&::before {
 			@include pseudo();
 			@include wh (24%, 1px);
-			border: 1px solid #1E4D51;
+			border: 1px solid $bgColorBtn;
 		}
 
 		&::after {
