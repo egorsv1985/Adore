@@ -1,12 +1,12 @@
 @charset "UTF-8";
-.footer .container, .payment .container, .partners .container, .about .container, .main .container, .header .container {
+.footer .container, .payment .container, .about .container, .main .container, .header .container {
   max-width: 390px;
   width: 100%;
   margin: 0 auto;
   padding: 0 24px;
 }
 @media (min-width: 576px) {
-  .footer .container, .payment .container, .partners .container, .about .container, .main .container, .header .container {
+  .footer .container, .payment .container, .about .container, .main .container, .header .container {
     padding: 0 24px;
   }
 }
@@ -538,7 +538,7 @@ template {
 
 .contacts h2 {
   font-family: "PlayfairDisplay-Regular", sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 94.5%;
   text-transform: uppercase;
   font-weight: 400;
@@ -615,43 +615,58 @@ template {
   height: 232px;
 }
 
-.partners__wrapper__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
+.partners__wrapper {
+  padding: 14px;
+  margin-bottom: 20px;
+  background-color: #1E4D51;
 }
 .partners h2 {
   font-family: "PlayfairDisplay-Regular", sans-serif;
-  font-size: 22px;
+  font-size: 24px;
   line-height: 94.5%;
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
-  margin: 18px 0;
+  margin: 32px 0 20px;
   position: relative;
 }
 .partners h2::after, .partners h2::before {
   content: "";
   display: block;
-  width: 146px;
+  width: 24%;
   height: 1px;
   border: 1px solid #1E4D51;
 }
 .partners h2::after {
   position: absolute;
   top: 50%;
-  bottom: 0;
-  left: 95px;
   right: 0;
 }
 .partners h2::before {
   position: absolute;
   top: 50%;
-  bottom: 0;
-  left: -150px;
-  right: 0;
+}
+.partners__border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 1px solid #E4B0A2;
+}
+.partners__img {
+  width: 316px;
+  height: 144px;
+  margin-top: 20px;
+}
+.partners__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 13px;
+  margin: 20px 0 28px;
 }
 .payment__wrapper {
   display: flex;
