@@ -1,12 +1,12 @@
 @charset "UTF-8";
-.footer .container, .about .container, .main .container, .header .container {
+.footer .container, .payment .container, .about .container, .main .container, .header .container {
   max-width: 390px;
   width: 100%;
   margin: 0 auto;
   padding: 0 24px;
 }
 @media (min-width: 576px) {
-  .footer .container, .about .container, .main .container, .header .container {
+  .footer .container, .payment .container, .about .container, .main .container, .header .container {
     padding: 0 24px;
   }
 }
@@ -536,6 +536,179 @@ template {
   margin-bottom: 30px;
 }
 
+.contacts h2 {
+  font-family: "PlayfairDisplay-Regular", sans-serif;
+  font-size: 22px;
+  line-height: 94.5%;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  margin: 32px 0 50px;
+  position: relative;
+}
+.contacts h2::after, .contacts h2::before {
+  content: "";
+  display: block;
+  width: 126px;
+  height: 0;
+  border: 1px solid #1E4D51;
+}
+.contacts h2::after {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.contacts h2::before {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 260px;
+  right: 0;
+}
+.contacts__text {
+  font-family: "Oswald-Medium", sans-serif;
+  font-size: 22px;
+  line-height: 100%;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.07em;
+  padding: 0 48px;
+  margin-bottom: 62px;
+}
+.contacts__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  padding-left: 30px;
+  margin-bottom: 62px;
+}
+.contacts__telephone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 6px;
+}
+.contacts__name {
+  font-family: "PlayfairDisplay-Regular", sans-serif;
+  font-size: 22px;
+  line-height: 100%;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.01em;
+}
+.contacts__tel {
+  font-family: "PlayfairDisplay-Regular", sans-serif;
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.07em;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.contacts__img {
+  width: 185px;
+  height: 232px;
+}
+
+.payment__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.payment h2 {
+  font-family: "PlayfairDisplay-Regular", sans-serif;
+  font-size: 22px;
+  line-height: 94.5%;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  margin: 18px 0;
+  position: relative;
+}
+.payment h2::after, .payment h2::before {
+  content: "";
+  display: block;
+  width: 146px;
+  height: 1px;
+  border: 1px solid #1E4D51;
+}
+.payment h2::after {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: 95px;
+  right: 0;
+}
+.payment h2::before {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  left: -150px;
+  right: 0;
+}
+.payment h1 {
+  font-family: "Oswald-Medium", sans-serif;
+  font-size: 26px;
+  line-height: 100%;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.07em;
+  margin: 18px 0;
+}
+.payment__img {
+  width: 258px;
+  height: 258px;
+}
+.payment__discount {
+  font-family: "Oswald-Regular", sans-serif;
+  font-size: 16px;
+  line-height: 100%;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 0.07em;
+  text-decoration-line: line-through;
+}
+.payment__price {
+  font-family: "Oswald-Medium", sans-serif;
+  font-size: 36px;
+  line-height: 100%;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.07em;
+}
+.payment .btn {
+  background-color: transparent;
+  width: 236px;
+  height: 40px;
+  margin: 12px 0 68px;
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: transparent;
+  box-shadow: 0px 4px 4px rgba(30, 77, 81, 0.25);
+  border-radius: 5px;
+  font-size: 22px;
+  line-height: 94.5%;
+  font-weight: 400;
+  text-align: center;
+  font-family: "PlayfairDisplay-Regular", sans-serif;
+  color: #1E4D51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #1E4D51;
+}
+.payment__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 22px;
+}
 .footer__wrapper {
   padding: 30px 0;
 }
