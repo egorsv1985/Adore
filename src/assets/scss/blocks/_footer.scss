@@ -13,11 +13,7 @@
 		@include flex (space-between, center, wrap);
 	}
 
-	// .footer__item
-	&__item {}
-
-	// .footer__link
-	&__link {
+	a {
 		font-family: "PlayfairDisplay-Regular", sans-serif;
 		@include font (18px, 94.5%, 400, center);
 	}
