@@ -829,34 +829,9 @@ template {
   margin: 32px 0 95px;
 }
 
-.speakerCards h2 {
-  font-family: "PlayfairDisplay-Regular", sans-serif;
-  font-size: 24px;
-  line-height: 94.5%;
-  text-transform: uppercase;
-  font-weight: 400;
-  text-align: center;
-  margin: 32px 0 28px;
-  position: relative;
-}
-.speakerCards h2::after, .speakerCards h2::before {
-  content: "";
-  display: block;
-  width: 24%;
-  height: 1px;
-  border: 1px solid #1E4D51;
-}
-.speakerCards h2::after {
-  position: absolute;
-  top: 50%;
-  right: 0;
-}
-.speakerCards h2::before {
-  position: absolute;
-  top: 50%;
-}
 .speakerCards__btn {
-  margin-bottom: 28px;
+  margin-bottom: 30px;
+  margin-top: 30px;
 }
 .speakerCards__wrap {
   background-color: #1E4D51;
