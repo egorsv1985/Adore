@@ -850,11 +850,12 @@ template {
   font-size: 12px;
   line-height: 94.5%;
   font-weight: 400;
-  padding-bottom: 6 px;
+  padding-bottom: 6px;
 }
 .speakerCards__img {
   margin: 0 auto;
-  border: solid 5px red;
+  border: solid 6px #e4b0a2;
+  border-radius: 50%;
 }
 .speakerCards__wrapper {
   padding: 20px 21px;
