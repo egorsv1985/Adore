@@ -1,0 +1,71 @@
+.speakerCards {
+  h2 {
+    font-family: "PlayfairDisplay-Regular", sans-serif;
+    @include font(24px, 94.5%, 400, center, uppercase);
+    margin: 32px 0 20px;
+    position: relative;
+
+    &::after,
+    &::before {
+      @include pseudo();
+      @include wh(24%, 1px);
+      border: 1px solid $bgColorBtn;
+    }
+
+    &::after {
+      @include pos(absolute, 50%, $right: 0);
+    }
+
+    &::before {
+      @include pos(absolute, 50%);
+    }
+  }
+  &__btn {
+    margin-bottom: 20px;
+  }
+  &__wrap {
+    background-color: $bgColorBtn;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  &__text,
+  &__subtitle {
+    color: #e4b0a2;
+    font-family: "Oswald-Regular", sans-serif;
+  }
+
+  &__text {
+    max-width: 264px;
+    width: 100%;
+    margin-top: 14px;
+    text-align: center;
+    @include font(12px, 94.5%, 400);
+    padding-bottom: 6 px;
+  }
+
+  &__img {
+    margin: 0 auto;
+  }
+  &__wrapper {
+    padding: 20px 21px;
+    border: solid 1px #e4b0a2;
+    margin-right: 14px;
+    margin-left: 14px;
+  }
+  &__subtitle {
+    text-align: center;
+    @include font(22px, 94.5%, 400);
+    // margin: 20px 0 20px;
+  }
+
+  &__name {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin: 20px 0 20px;
+  }
+  &__icon {
+    margin-left: 6px;
+  }
+}
