@@ -2,7 +2,7 @@
   h2 {
     font-family: "PlayfairDisplay-Regular", sans-serif;
     @include font(24px, 94.5%, 400, center, uppercase);
-    margin: 32px 0 20px;
+    margin: 32px 0 28px;
     position: relative;
 
     &::after,
@@ -21,12 +21,12 @@
     }
   }
   &__btn {
-    margin-bottom: 20px;
+    margin-bottom: 28px;
   }
   &__wrap {
     background-color: $bgColorBtn;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   &__text,

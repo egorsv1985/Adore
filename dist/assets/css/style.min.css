@@ -836,7 +836,7 @@ template {
   text-transform: uppercase;
   font-weight: 400;
   text-align: center;
-  margin: 32px 0 20px;
+  margin: 32px 0 28px;
   position: relative;
 }
 .speakerCards h2::after, .speakerCards h2::before {
@@ -856,12 +856,12 @@ template {
   top: 50%;
 }
 .speakerCards__btn {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 .speakerCards__wrap {
   background-color: #1E4D51;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .speakerCards__text, .speakerCards__subtitle {
   color: #e4b0a2;
