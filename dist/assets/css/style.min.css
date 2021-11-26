@@ -854,6 +854,7 @@ template {
 }
 .speakerCards__img {
   margin: 0 auto;
+  border: solid 5px red;
 }
 .speakerCards__wrapper {
   padding: 20px 21px;
