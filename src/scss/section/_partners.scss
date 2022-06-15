@@ -1,0 +1,61 @@
+.partners {
+
+
+
+	// .payment__wrapper
+	&__wrapper {
+		padding: 14px;
+		margin-bottom: 20px;
+		background-color: $bgColorBtn;
+	}
+
+
+	h2 {
+		font-family: "PlayfairDisplay", sans-serif;
+		@include font (24px, 94.5%, 400, center, uppercase);
+		margin: 32px 0 20px;
+		position: relative;
+
+		&::after,
+		&::before {
+			@include pseudo();
+			@include wh (24%, 1px);
+			border: 1px solid $bgColorBtn;
+		}
+
+		&::after {
+			@include pos (absolute, 50%, $right: 0);
+		}
+
+		&::before {
+			@include pos (absolute, 50%);
+		}
+	}
+
+	// .partners__border
+	&__border {
+		@include flex (center, center, wrap, column);
+		border: 1px solid $bgColor;
+	}
+
+
+	// .partners__img
+	&__img {
+		@include wh (316px, 144px);
+		margin-top: 20px;
+
+	}
+
+	// .partners__list
+	&__list {
+		@include flex (space-between, center, wrap, column);
+		gap: 13px;
+		margin: 20px 0 28px;
+	}
+
+	// .partners__item
+	&__item {}
+
+	// .partners__logo
+	&__logo {}
+}

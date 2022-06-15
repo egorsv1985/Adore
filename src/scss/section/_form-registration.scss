@@ -1,0 +1,46 @@
+.form {
+	.container {
+		@extend %container;
+	}
+
+	&__title {
+		@include font(28px, 94.5%, 700);
+		font-family: "PlayfairDisplay", sans-serif;
+		text-align: center;
+		margin-top: 32px;
+	}
+
+	&__button {
+		width: 236px;
+		height: 39px;
+		background: #e4b0a2;
+		@include font(20px, 94.5%, 400);
+		font-family: "PlayfairDisplay", sans-serif;
+		margin-top: 54px;
+		box-shadow: 4px 4px 4px rgba(30, 77, 81, 0.25);
+		border: none;
+	}
+
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		background: #1e4d51;
+		padding: 24px 37px 12px;
+		margin-top: 50px;
+	}
+
+	&__email,
+	&__tel {
+		margin-top: 24px;
+	}
+}
+
+input {
+	width: 228px;
+	height: 32px;
+	border: 2px solid #e4b0a2;
+	background-color: #1e4d51;
+	padding-left: 24px;
+	color: #e4b0a2;
+}

@@ -1,0 +1,69 @@
+.contacts {
+
+	h2 {
+		font-family: "PlayfairDisplay", sans-serif;
+		@include font (24px, 94.5%, 400, center, uppercase);
+		margin: 32px 0 50px;
+		position: relative;
+
+		&::after,
+		&::before {
+			@include pseudo();
+			@include wh (24%, 1px);
+			border: 1px solid $bgColorBtn;
+		}
+
+		&::after {
+			@include pos (absolute, 50%, $right: 0);
+		}
+
+		&::before {
+			@include pos (absolute, 50%);
+		}
+	}
+
+	// .contacts__text
+	&__text {
+		font-family: "Oswald", sans-serif;
+		@include font (22px, 100%, 500, center);
+		letter-spacing: 0.07em;
+		padding: 0 48px;
+		margin-bottom: 62px;
+	}
+
+	// .contacts__wrap
+	&__wrap {
+		@include flex (space-between, center);
+		gap: 18px;
+		padding-left: 30px;
+		margin-bottom: 62px;
+
+	}
+
+	// .contacts__telephone
+	&__telephone {
+		@include flex (space-between, center, wrap, column);
+		gap: 6px;
+	}
+
+	// .contacts__name
+	&__name {
+		font-family: "PlayfairDisplay", sans-serif;
+		@include font (22px, 100%, 400, center);
+		letter-spacing: 0.01em;
+	}
+
+	// .contacts__tel
+	&__tel {
+		font-family: "PlayfairDisplay-Regular", sans-serif;
+		@include font (20px, 100%, 400, center);
+		letter-spacing: 0.07em;
+		font-feature-settings: "pnum"on, "lnum"on;
+	}
+
+	// .contacts__img
+	&__img {
+		@include wh (185px, 232px);
+
+	}
+}
