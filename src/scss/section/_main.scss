@@ -1,20 +1,16 @@
 .main {
+	padding: 20px 0 28px;
+
 	.container {
 		@extend %container;
 	}
-
-
-
-
-
-
 
 	// .main__wrapper
 	&__wrapper {
 		@include flex (center, center, wrap, column);
 		border: 3px solid #1E4D51;
 
-		padding-bottom: 30%;
+		padding-bottom: 48px;
 	}
 
 	// .main__img
@@ -22,42 +18,50 @@
 		@include wh (238px);
 	}
 
-	h2 {
-		font-family: "Oswald", sans-serif;
-		@include font (28px, 94.5%, 500, center);
-		margin: 26px 0;
+	// .main__title
+	&__subtitle {
+
+		margin: 12px 0 20px;
+		max-width: 230px;
+
+		font-weight: 500;
+		font-size: 28px;
+		line-height: 94.5%;
+		text-align: center;
 	}
 
-	h1 {
-		font-family: "Oswald", sans-serif;
-		@include font (28px, 94.5%, 400, center);
+	// .main__title
+	&__title {
+
+		font-weight: 400;
+		font-size: 28px;
+		line-height: 94.5%;
+		text-align: center;
 		margin: 26px 0;
+		max-width: 270px;
 	}
 
 
 	// .main__date
 	&__date {
-		font-family: "Oswald", sans-serif;
-		@include font (22px, 94.5%, 400, center);
-		margin-bottom: 10px;
+		@include flex (center, center);
+		gap: 5px;
+		margin-bottom: 34px;
+
 	}
 
 	// .main__time
 	&__time {
-		@include font (16px, 94.5%, 400, center);
+
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 94.5%;
+		text-align: center;
+
 	}
 
 	// .main__btn
 	&__btn {
-		@include wh (200px, 40px);
-		margin-top: 26px;
-		filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
-		background: $bgColorBtn;
-		box-shadow: 0px 4px 4px rgba(30, 77, 81, 0.25);
-
-		@include font (16px, 94.5%, 400, center);
-		font-family: "PlayfairDisplay", sans-serif;
-		color: $textColorBtn;
-		@include flex (center, center);
+		max-width: 200px;
 	}
 }

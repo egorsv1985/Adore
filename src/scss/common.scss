@@ -4,13 +4,10 @@
     font-weight: 600;
     font-size: 22px;
     line-height: 1.2;
-    color: #000;
+    color: $textColor;
 }
 
-.footer-title {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.2;
-    color: #575757;
-    text-transform: uppercase;
+a {
+    font-family: "PlayfairDisplay", sans-serif;
+    @include font (18px, 94.5%, 400, center);
 }

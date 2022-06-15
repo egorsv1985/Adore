@@ -3,7 +3,9 @@
 		@extend %container;
 	}
 
-	margin: 45px 0 10px;
+	margin: 45px 0 9px;
+	padding-bottom: 1px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 	// .header__wrapper
 	&__wrapper {
@@ -18,13 +20,4 @@
 		@include flex (space-between, center);
 		gap: 24px;
 	}
-
-	// .header__item
-	&__item {}
-
-	// .header__link
-	&__link {}
-
-	// .header__img
-	&__img {}
 }
