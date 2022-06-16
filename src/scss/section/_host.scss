@@ -1,0 +1,119 @@
+.host {
+	padding: 30px 0;
+
+	.container {
+		@extend %container;
+	}
+
+	// .host__wrapper
+	&__wrapper {
+		@include flex ($align-items: center, $flex-direction: column);
+	}
+
+
+	// .host__title
+	&__title {
+
+		line-height: 94.5%;
+		text-transform: uppercase;
+		margin-bottom: 42px;
+	}
+
+	// .host__pseudo
+	&__pseudo {
+		position: relative;
+		margin-bottom: 24px;
+
+		&:after,
+		&::before {
+			@include pseudo;
+			@include wh (219px);
+			@include pos (absolute, $top: -5px, $left: 50%);
+			border-radius: 50%;
+			transform: translateX(-50%);
+		}
+
+		&::after {
+
+			border: 1px solid #000000;
+
+		}
+
+		&::before {
+
+			border: 4px solid #1E4D51;
+			box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+
+
+	// .host__img
+	&__img {
+		@include wh (100%, 209px);
+		max-width: 209px;
+		border-radius: 50%;
+		border: 5px solid $mainColor;
+
+	}
+
+	// .host__wrap
+	&__wrap {
+		@include flex (center, center);
+		gap: 6px;
+	}
+
+	// .host__subtitle
+	&__subtitle {
+
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 94.5%;
+		text-align: center;
+		letter-spacing: 0;
+	}
+
+	// .host__link
+	&__link {
+		align-self: flex-end;
+	}
+}
+
+.person__pseudo {}
+
+.person__pseudo::after {
+	content: "";
+	display: block;
+	border-radius: 50%;
+
+	position: absolute;
+	width: 219px;
+	height: 219px;
+	transform: translateX(-50%);
+	left: 50%;
+	top: -5px;
+	border: 1px solid #000000;
+
+}
+
+.person__pseudo::before {
+	content: "";
+	display: block;
+	border-radius: 50%;
+
+	position: absolute;
+	width: 219px;
+	height: 219px;
+	transform: translateX(-50%);
+	left: 50%;
+	top: -5px;
+	border: 4px solid #1E4D51;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.person__img {
+	margin: 0 auto;
+	max-width: 209px;
+	max-height: 209px;
+	border-radius: 50%;
+	border: 5px solid #1E4D51;
+}

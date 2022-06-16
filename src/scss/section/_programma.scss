@@ -1,0 +1,114 @@
+.program {
+	padding-top: 16px;
+
+	.container {
+		@extend %container;
+	}
+
+	// .program__title
+	&__title {
+
+		position: relative;
+		margin-bottom: 16px;
+		width: 100%;
+
+		&::after,
+		&::before {
+			@include pseudo();
+			@include wh (100%, 1px);
+			border: 1px solid $bgColorBtn;
+			@include pos (absolute, 50%);
+
+		}
+
+		&::after {
+			right: -70%;
+
+		}
+
+		&::before {
+			left: -70%;
+		}
+	}
+
+	// .program__arrow
+	&__arrow {}
+
+	// .program__wraper
+	&__wraper {
+		margin-top: 18px;
+		padding: 15px 18px;
+		background-color: $bgColorBtn;
+
+	}
+
+	// .program__border
+	&__border {
+		@include flex (center, flex-start, wrap, column);
+		border: 1px solid $bgColor;
+		padding: 12px 30px;
+		margin: 0 auto;
+	}
+
+	// .program__img
+	&__img {
+		@include wh (100%, 176px);
+		max-width: 250px;
+		display: block;
+		margin: 0 auto 20px;
+	}
+
+	// .program__box
+	&__box {
+		@include flex (center, center);
+		gap: 8px;
+		margin-bottom: 14px;
+
+
+	}
+
+	// .program__text
+	&__text {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 94.5%;
+		text-align: left;
+		color: $bgColor;
+		max-width: 130px;
+		letter-spacing: 0;
+
+		&--big {
+			font-size: 14px;
+		}
+	}
+
+	// .program__subtitle
+	&__subtitle {
+
+
+		font-family: 'Playfair Display';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 94.5%;
+		text-transform: uppercase;
+		color: $bgColor;
+		letter-spacing: 0;
+		margin-bottom: 30px;
+
+
+
+	}
+
+	// .program__address
+	&__address {
+
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 94.5%;
+
+		color: $bgColor;
+
+
+	}
+}
