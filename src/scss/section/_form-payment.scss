@@ -1,53 +1,54 @@
 .formSecond {
+	padding: 16px 0 30px;
 	.container {
 		@extend %container;
 	}
 
+	// .formSecond__arrow
+	&__arrow {
+		margin-bottom: 20px;
+	}
+
 	&__title {
-		@include font(28px, 94.5%, 700);
-		font-family: "PlayfairDisplay", sans-serif;
-		text-align: center;
-		margin-top: 32px;
-	}
 
-	&__button {
-		width: 236px;
-		height: 39px;
-		background: #e4b0a2;
-		@include font(20px, 94.5%, 400);
-		font-family: "PlayfairDisplay", sans-serif;
-		margin-top: 54px;
-		box-shadow: 4px 4px 4px rgba(30, 77, 81, 0.25);
-		border: none;
-	}
-
-	&__wrap {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		background: #1e4d51;
-		padding: 24px 37px 12px;
-		margin-top: 8px;
+		font-weight: 700;
+		font-size: 28px;
+		line-height: 94.5%;
+		margin-bottom: 30px;
 	}
 
 	&__text {
-		margin-top: 31px;
-		text-align: center;
-		@include font(11px, 100%, 300);
-		font-family: "Oswald";
+
+		font-size: 11px;
+		font-weight: 300;
+		letter-spacing: 0;
+		margin-bottom: 8px;
 	}
 
-	&__date,
-	&__cvv {
+	&__wrap {
+		@include flex ($align-items: center, $flex-direction: column);
+
+		background: $mainColor;
+		padding: 24px 0;
+
+
+	}
+
+
+	// .formSecond__input
+	&__input {
+
+		margin-bottom: 24px;
+	}
+
+	// .formSecond__btn
+	&__btn {
+		max-width: 236px;
 		margin-top: 24px;
-	}
-}
 
-input {
-	width: 228px;
-	height: 32px;
-	border: 2px solid #e4b0a2;
-	background-color: #1e4d51;
-	padding-left: 24px;
-	color: #e4b0a2;
+		font-family: 'Playfair Display';
+
+		line-height: 94.5%;
+		letter-spacing: 1.6px;
+	}
 }

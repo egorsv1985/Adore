@@ -1,56 +1,67 @@
 .partners {
+	
+	padding: 16px 0;
 
-
+	.container {
+		@extend %container;
+	}
 
 	// .payment__wrapper
 	&__wrapper {
 		padding: 14px;
-		margin-bottom: 20px;
+		
 		background-color: $bgColorBtn;
 	}
 
+	&__title {
 
-	h2 {
-		font-family: "PlayfairDisplay", sans-serif;
-		@include font (24px, 94.5%, 400, center, uppercase);
-		margin: 32px 0 20px;
 		position: relative;
+		margin-bottom: 44px;
+		width: 100%;
 
 		&::after,
 		&::before {
 			@include pseudo();
-			@include wh (24%, 1px);
+			@include wh (100%, 1px);
 			border: 1px solid $bgColorBtn;
+			@include pos (absolute, 50%);
+
 		}
 
 		&::after {
-			@include pos (absolute, 50%, $right: 0);
+			right: -80%;
+
 		}
 
 		&::before {
-			@include pos (absolute, 50%);
+			left: -80%;
 		}
 	}
 
+
 	// .partners__border
 	&__border {
-		@include flex (center, center, wrap, column);
+		@include flex (center, flex-start, wrap, column);
 		border: 1px solid $bgColor;
+		padding: 20px 0;
+		margin: 0 auto;
 	}
 
 
 	// .partners__img
 	&__img {
-		@include wh (316px, 144px);
-		margin-top: 20px;
-
+		@include wh (100%, 144px);
+		max-width: 316px;
+		display: block;
+		margin: 0 auto;
 	}
 
 	// .partners__list
 	&__list {
-		@include flex (space-between, center, wrap, column);
+		@include flex (space-between, flex-start, wrap, column);
 		gap: 13px;
-		margin: 20px 0 28px;
+		margin-top: 20px;
+		padding-left: 30px;
 	}
 
 	// .partners__item

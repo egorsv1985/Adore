@@ -1,13 +1,50 @@
 // Заголовки, общие БЄМ блоки и проче...
 
 .title {
-    font-weight: 600;
+    font-family: "PlayfairDisplay", sans-serif;
+
     font-size: 22px;
     line-height: 1.2;
+    text-align: center;
+    color: $textColor;
+}
+
+.subtitle {
+
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.07em;
+
     color: $textColor;
 }
 
 a {
     font-family: "PlayfairDisplay", sans-serif;
     @include font (18px, 94.5%, 400, center);
+}
+
+.text {
+    font-weight: 500;
+    font-size: 22px;
+    color: $textColor;
+
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: 0.07em;
+}
+
+.input {
+    max-width: 228px;
+    @include wh (100%, 32px);
+    border: 2px solid #e4b0a2;
+    background-color: $mainColor;
+    padding-left: 24px;
+    color: $textColorBtn;
+
+    &:focus,
+    &:focus-visible {
+        outline-color: $mainColor;
+    }
 }

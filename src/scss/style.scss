@@ -19,7 +19,7 @@ $fontSize: rem(14); // где 14(px) - размер шрифта по умолч
 // Основные цвета
 $mainColor: #1E4D51; // Цвет шрифта по умолчанию
 
-$accentColor: #72FF88;
+
 // Colors
 
 $textColor: #1E4D51;
@@ -34,7 +34,7 @@ $breakpoints: (xs: 576px,
 );
 
 %container {
-	max-width: 390px;
+	max-width: 438px;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 24px;
@@ -170,8 +170,8 @@ body {
 @import "header";
 @import "footer";
 
-// Подключение стилей отдельных страниц
-
+// Подключение компонентов (кнопок, инпутов и т.д.)
+@import "./components/btn";
 //  Подключение стилей для секций
 @import "./section/main";
 @import "./section/about";
@@ -183,5 +183,3 @@ body {
 @import "./section/programma";
 @import "./section/person";
 
-// Подключение компонентов (кнопок, инпутов и т.д.)
-@import "./components/btn";
