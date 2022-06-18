@@ -1,0 +1,174 @@
+.dress-code {
+
+	.container {
+		@extend %container;
+	}
+	// .dress-code__wrapper
+	&__wrapper {
+		margin-top: 18px;
+		padding: 15px 25px;
+		background-color: $bgColorBtn;
+	}
+
+	// .dress-code__border
+	&__border {
+		@include flex (center, center, wrap, column);
+		border: 1px solid $bgColor;
+		padding: 12px 0 20px 4px;
+		margin: 0 auto;
+	}
+
+	// .dress-code__title
+	&__title {
+
+		font-weight: 400;
+		font-size: 23px;
+		line-height: 94.5%;
+
+		text-transform: uppercase;
+
+		color: $textColorBtn;
+		margin-bottom: 20px;
+	}
+
+	// .dress-code__wrap
+	&__wrap {
+		@include flex (space-between, center);
+		gap: 5px;
+	}
+
+	// .dress-code__img
+	&__img {}
+
+	// .dress-code__box
+	&__box {
+		@include flex ($flex-direction: column);
+		gap: 10px;
+		padding-top: 15px;
+	}
+
+	// .dress-code__content
+	&__content {
+		@include flex();
+	}
+
+	// .dress-code__text
+	&__text {
+
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 94.5%;
+		letter-spacing: 0;
+		text-align: left;
+		color: $textColorBtn;
+
+		max-width: 95px;
+
+		&--right {
+			text-align: right;
+		}
+	}
+
+	// .dress-code__image
+	&__image {}
+}
+
+.person__dressCode__img {
+	max-height: 112px;
+	max-width: 186px;
+
+
+}
+
+.person__dressCode {
+	background-color: #1E4D51;
+	padding: 15px 24px;
+}
+
+.person__dressCode__title,
+.person__dressCode__text--top,
+.person__dressCode__text--bottom {
+	color: #e4b0a2;
+}
+
+.person__dressCode__wrapper {
+	border: solid 1px #e4b0a2;
+}
+
+.person__dressCode__title,
+.person__present__title {
+	font-size: 23px;
+	line-height: 94.5%;
+	font-weight: 400;
+	font-family: "PlayfairDisplay-Regular", sans-serif;
+	text-align: center;
+	margin: 12px 0 24px;
+}
+
+.person__present__title {
+	margin-bottom: 34px;
+}
+
+.person__dressCode__text--top,
+.person__dressCode__text--bottom,
+.person__present__text--top,
+.person__present__text--bottom {
+	font-size: 12px;
+	line-height: 94.5%;
+	font-weight: 400;
+	font-family: "Oswald-Regular", sans-serif;
+}
+
+.person__dressCode__img--top,
+.person__dressCode__img--bottom {
+	max-height: 48px;
+	max-width: 36px;
+
+
+}
+
+.person__dressCode__content,
+.person__present__content {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.person__dressCode__wrap,
+.person__present__wrap {
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 0 27px 4px;
+}
+
+.person__present__wrap {
+	margin: 0 0 30px 10px;
+}
+
+.person__dressCode__wrap--right,
+.person__present__wrap--right {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: flex-start;
+	margin-left: 10px;
+	gap: 10px;
+}
+
+.person__present__wrap--right {
+
+	-ms-flex-pack: center;
+	justify-content: center;
+
+}
+
+.person__dressCode__text--bottom,
+.person__present__text--bottom {
+	text-align: right;
+}

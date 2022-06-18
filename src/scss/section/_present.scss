@@ -1,0 +1,166 @@
+.present {
+	padding-top: 30px;
+
+	.container {
+		@extend %container;
+	}
+
+	// .present__wrapper
+	&__wrapper {
+		padding: 12px 0 32px 12px;
+		border: 1px solid #1E4D51;
+	}
+
+	
+
+	// .present__title
+	&__title {
+		font-size: 23px;
+		line-height: 94.5%;
+
+		text-transform: uppercase;
+
+		margin-bottom: 32px;
+	}
+
+	// .present__wrap
+	&__wrap {
+		@include flex (center, center);
+		gap: 10px;
+	}
+
+	// .present__img
+	&__img {}
+
+	// .present__text
+	&__text {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 94.5%;
+		letter-spacing: 0;
+	}
+}
+
+
+.person__present__wrapper {
+	border: solid 1px #1e4d51;
+}
+
+.person__present__text--right {
+	font-size: 14px;
+	line-height: 94.5%;
+	font-weight: 400;
+}
+
+
+.person__present {
+	padding-top: 30px;
+	padding-bottom: 15px;
+}
+
+.person__present__img {
+	max-height: 116px;
+	max-width: 154px;
+
+
+}
+
+.person__dressCode__img {
+	max-height: 112px;
+	max-width: 186px;
+
+
+}
+
+.person__dressCode {
+	background-color: #1E4D51;
+	padding: 15px 24px;
+}
+
+.person__dressCode__title,
+.person__dressCode__text--top,
+.person__dressCode__text--bottom {
+	color: #e4b0a2;
+}
+
+.person__dressCode__wrapper {
+	border: solid 1px #e4b0a2;
+}
+
+.person__dressCode__title,
+.person__present__title {
+	font-size: 23px;
+	line-height: 94.5%;
+	font-weight: 400;
+	font-family: "PlayfairDisplay-Regular", sans-serif;
+	text-align: center;
+	margin: 12px 0 24px;
+}
+
+.person__present__title {
+	margin-bottom: 34px;
+}
+
+.person__dressCode__text--top,
+.person__dressCode__text--bottom,
+.person__present__text--top,
+.person__present__text--bottom {
+	font-size: 12px;
+	line-height: 94.5%;
+	font-weight: 400;
+	font-family: "Oswald-Regular", sans-serif;
+}
+
+.person__dressCode__img--top,
+.person__dressCode__img--bottom {
+	max-height: 48px;
+	max-width: 36px;
+
+
+}
+
+.person__dressCode__content,
+.person__present__content {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.person__dressCode__wrap,
+.person__present__wrap {
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 0 27px 4px;
+}
+
+.person__present__wrap {
+	margin: 0 0 30px 10px;
+}
+
+.person__dressCode__wrap--right,
+.person__present__wrap--right {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: flex-start;
+	margin-left: 10px;
+	gap: 10px;
+}
+
+.person__present__wrap--right {
+
+	-ms-flex-pack: center;
+	justify-content: center;
+
+}
+
+.person__dressCode__text--bottom,
+.person__present__text--bottom {
+	text-align: right;
+}
